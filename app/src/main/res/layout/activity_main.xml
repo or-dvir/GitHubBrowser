@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/activity_main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="or_dvir.hotmail.com.githubbrowser.activities.ActivityMain">
+
+    <EditText
+        android:id="@+id/editText_login_userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="@string/userName"
+        android:inputType="textPersonName"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/button_login"
+        android:src="@drawable/background_login"
+        tools:ignore="ContentDescription"/>
+
+
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:id="@+id/button_login"
+        style="@style/ButtonTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText_login_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        fancy:fb_text="@string/login"/>
+
+    <EditText
+        android:id="@+id/editText_login_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText_login_userName"
+        android:layout_alignStart="@+id/editText_login_userName"
+        android:layout_below="@+id/editText_login_userName"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="@string/password"
+        android:inputType="textPassword"/>
+
+</RelativeLayout>

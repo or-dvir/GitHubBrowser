@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/activity_user_profile"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="or_dvir.hotmail.com.githubbrowser.activities.ActivityUserProfile">
+
+    <LinearLayout
+        android:id="@+id/linearLayout_userProfile_userDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/imageView_userProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:contentDescription="@string/userImage"
+            android:src="@mipmap/ic_launcher"
+            tools:ignore="RtlHardcoded"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView_userProfile_userName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:text="user title"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@android:color/black"
+                tools:ignore="HardcodedText,RtlHardcoded"/>
+
+            <mehdi.sakout.fancybuttons.FancyButton
+                android:id="@+id/button_userProfile_followers"
+                style="@style/ButtonTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                fancy:fb_radius="20dp"
+                fancy:fb_text="followers:\n34"
+                tools:ignore="HardcodedText,RtlHardcoded"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <!--this text view is just to make the 2 buttons align-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="user title"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:visibility="invisible"
+                tools:ignore="HardcodedText,RtlHardcoded"/>
+
+            <mehdi.sakout.fancybuttons.FancyButton
+                android:id="@+id/button_userProfile_following"
+                style="@style/ButtonTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:textAllCaps="false"
+                fancy:fb_radius="20dp"
+                fancy:fb_text="following:\n34"
+                tools:ignore="HardcodedText,RtlHardcoded"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView_userProfile_repositories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/linearLayout_userProfile_userDetails"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/repositories"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@android:color/black"
+        tools:ignore="RtlHardcoded"/>
+
+    <goldzweigapps.tabs.View.EasyTabs
+        android:id="@+id/tabs_userProfile"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textView_userProfile_repositories"/>
+
+</RelativeLayout>

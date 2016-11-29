@@ -1,0 +1,27 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="ButtonTheme">
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="fb_defaultColor">@android:color/transparent</item>
+        <item name="fb_focusColor">#808080</item>
+        <item name="fb_borderColor">@color/colorPrimary</item>
+        <item name="fb_borderWidth">2dp</item>
+        <item name="fb_radius">30dp</item>
+        <item name="fb_textColor">@color/colorAccent</item>
+        <item name="fb_disabledColor">#808080</item>
+        <item name="fb_textSize">18sp</item>
+    </style>
+
+</resources>

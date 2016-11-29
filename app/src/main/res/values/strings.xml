@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">GitHub Browser</string>
+    <string name="userName">User Name</string>
+    <string name="date">1 JAN 2016</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="requiredField">Required Field</string>
+    <string name="oops">Oops...</string>
+    <string name="someErrorOccurred">Some error occurred. Please try again</string>
+    <string name="ok">OK</string>
+    <string name="incorrectUserNameOrPassword">Incorrect user name or password</string>
+    <string name="loading">Loading. Please wait</string>
+    <string name="userImage">User Image</string>
+    <string name="repositories">Repositories</string>
+
+    <string name="owned">Owned</string>
+    <string name="starred">Starred</string>
+    <string name="following">Following:\n%s</string>
+    <string name="followers">Followers:\n%s</string>
+    <string name="failedToRetrieveData">Failed to retrieve data :(</string>
+    <string name="commits">Commits: %s</string>
+    <string name="branches">Branches: %s</string>
+    <string name="releases">Releases: %s</string>
+    <string name="contributors">Contributors: %s</string>
+    <string name="star">Star: %d</string>
+    <string name="fork">Fork: %d</string>
+    <string name="languages">Languages: %s</string>
+    <string name="ownerImage">Owner Image</string>
+    <string name="issues">Issues</string>
+    <string name="repositoryActionBarTitle">Repository - %s</string>
+    <string name="closed">closed</string>
+    <string name="all">All</string>
+    <string name="notAvailable">N/A</string>
+    <string name="noData_repositories">User %s repositories</string>
+    <string name="noData_issues">No %s issues</string>
+    <string name="open">open</string>
+    <string name="doesntOwn">doesn\'t own</string>
+    <string name="doesntHaveAnyStarred">doesn\'t have any starred</string>
+    <string name="areYouSureYouWantToExit">Are you sure you want to exit?\nThis will log you out of the app</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="typeUserNameInSearchBar">To search for a user, please type the users\' name in the search bar at the top</string>
+    <string name="user">User - %s</string>
+    <string name="search">User Search</string>
+    <string name="noResult">No results found :(</string>
+    <string name="myProfile">My Profile</string>
+    <string name="logout">Logout</string>
+    <string name="areYouSureYouWantToLogout">Are you sure you want to logout?</string>
+    <string name="starRepository">Star Rpository</string>
+    <string name="unstarRepository">Un-star Repository</string>
+    <string name="starredRepository">Starred Repository</string>
+    <string name="unstarredRepository">Unstarred Repository</string>
+
+
+</resources>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/activity_repository"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    tools:context="or_dvir.hotmail.com.githubbrowser.activities.ActivityUserProfile">
+
+    <LinearLayout
+        android:id="@+id/linearLayout_repository_repositoryDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:id="@+id/linearLayout_repository_imageContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:orientation="vertical"
+            tools:ignore="RtlHardcoded">
+
+            <ImageView
+                android:id="@+id/imageView_repository_ownerImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/ownerImage"
+                android:src="@mipmap/ic_launcher"
+                tools:ignore="RtlHardcoded"/>
+
+            <TextView
+                android:id="@+id/textView_repository_ownerName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="owner title"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@android:color/black"
+                tools:ignore="HardcodedText,RtlHardcoded"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout_repository_info1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView_repository_commits"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="commits: ..."
+                android:textColor="@android:color/black"
+                tools:ignore="HardcodedText,RtlHardcoded"/>
+
+            <TextView
+                android:id="@+id/textView_repository_branches"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="branches: ..."
+                android:textColor="@android:color/black"
+                tools:ignore="HardcodedText,RtlHardcoded"/>
+
+            <TextView
+                android:id="@+id/textView_repository_releases"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="releases: ..."
+                android:textColor="@android:color/black"
+                tools:ignore="HardcodedText,RtlHardcoded"/>
+
+            <mehdi.sakout.fancybuttons.FancyButton
+                android:id="@+id/button_repository_contributors"
+                style="@style/ButtonTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                fancy:fb_text="contributors: ..."
+                fancy:fb_textSize="15sp"
+                tools:ignore="HardcodedText,RtlHardcoded"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout_repository_info2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView_repository_star"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="star: ..."
+                android:textColor="@android:color/black"
+                tools:ignore="HardcodedText,RtlHardcoded"/>
+
+            <TextView
+                android:id="@+id/textView_repository_fork"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="fork: ..."
+                android:textColor="@android:color/black"
+                tools:ignore="HardcodedText,RtlHardcoded"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView_repository_languages"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout_repository_repositoryDetails"
+        android:layout_marginLeft="5dp"
+        android:text="languages: ..."
+        android:textColor="@android:color/black"
+        tools:ignore="HardcodedText,RtlHardcoded"/>
+
+    <TextView
+        android:id="@+id/textView_repository_issues"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView_repository_languages"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/issues"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@android:color/black"
+        tools:ignore="RtlHardcoded"/>
+
+    <goldzweigapps.tabs.View.EasyTabs
+        android:id="@+id/tabs_repository"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textView_repository_issues"/>
+
+</RelativeLayout>

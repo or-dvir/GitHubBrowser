@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/actionBar_favorite"
+        android:icon="@drawable/ic_actionbar_favorite_outline"
+        android:title="@string/starRepository"
+        android:visible="false"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/actionBar_search"
+        android:icon="@drawable/ic_actionbar_search"
+        android:title="@string/search"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/actionBar_myProfile"
+        android:title="@string/myProfile"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/actionBar_logout"
+        android:title="@string/logout"
+        app:showAsAction="never"/>
+
+</menu>

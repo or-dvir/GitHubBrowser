@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:fancy="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:id="@+id/button_list_loadMore"
+        style="@style/ButtonTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="10dp"
+        fancy:fb_radius="20dp"
+        android:layout_marginBottom="5dp"
+        fancy:fb_textSize="13sp"
+        fancy:fb_text="load more"/>
+
+</LinearLayout>

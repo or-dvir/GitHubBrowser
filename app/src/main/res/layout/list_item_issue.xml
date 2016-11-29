@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+    <TextView
+        android:id="@+id/textView_issueName"
+        style="?android:textAppearanceListItemSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:text="@string/userName"
+        android:layout_toLeftOf="@+id/textView_issueDate"
+        tools:ignore="RtlHardcoded"/>
+
+    <TextView
+        android:id="@+id/textView_issueDate"
+        style="?android:textAppearanceListItemSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="@string/date"
+        tools:ignore="RtlHardcoded"/>
+
+</RelativeLayout>
