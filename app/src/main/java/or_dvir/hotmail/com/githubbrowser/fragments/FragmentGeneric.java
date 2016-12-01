@@ -149,6 +149,12 @@ public class FragmentGeneric<T extends ArrayList> extends Fragment
 			mIsRequestRunning = savedInstanceState.getBoolean(Utils.Keys.IS_REQUEST_RUNNING);
 		}
 
+		mView = inflater.inflate(R.layout.fragment_generic_list, container, false);
+
+		mProgBar = (ProgressBar) mView.findViewById(R.id.progressBar_fragment_generic);
+
+		mList = (ListView) mView.findViewById(R.id.listView_fragment_generic);
+
 		if(mIsRequestRunning == true)
 		{
 			mList.setEnabled(false);
@@ -162,12 +168,6 @@ public class FragmentGeneric<T extends ArrayList> extends Fragment
 
 			mProgBar.setVisibility(View.GONE);
 		}
-
-		mView = inflater.inflate(R.layout.fragment_generic_list, container, false);
-
-		mProgBar = (ProgressBar) mView.findViewById(R.id.progressBar_fragment_generic);
-
-		mList = (ListView) mView.findViewById(R.id.listView_fragment_generic);
 
 		mList.setOnItemClickListener(new AdapterView.OnItemClickListener()
 		{

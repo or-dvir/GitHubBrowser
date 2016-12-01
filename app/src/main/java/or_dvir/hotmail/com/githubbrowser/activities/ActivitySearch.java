@@ -150,6 +150,12 @@ public class ActivitySearch extends MyActivity
 			bar.setTitle(R.string.search);
 		}
 
+		mtvInfo = (TextView) findViewById(R.id.textView_activitySearch_info);
+
+		mProgBar = (ProgressBar) findViewById(R.id.progressBar_activitySearch);
+
+		mListView = (ListView) findViewById(R.id.listView_activitySearch);
+
 		if(mIsRequestRunning == true)
 		{
 			mListView.setEnabled(false);
@@ -163,12 +169,6 @@ public class ActivitySearch extends MyActivity
 
 			updateUi(true, false, false);
 		}
-
-		mtvInfo = (TextView) findViewById(R.id.textView_activitySearch_info);
-
-		mProgBar = (ProgressBar) findViewById(R.id.progressBar_activitySearch);
-
-		mListView = (ListView) findViewById(R.id.listView_activitySearch);
 
 		mListView.setOnItemClickListener(new AdapterView.OnItemClickListener()
 		{
@@ -233,6 +233,12 @@ public class ActivitySearch extends MyActivity
 		//an "ArrayList" object and not "UserList"
 		@SuppressWarnings("unchecked")
 		ArrayList<User> users = (ArrayList<User>) intent.getSerializableExtra(Utils.Extras.USER_LIST);
+
+		if(users == null ||
+		   users.isEmpty() == true)
+		{
+			mIsRegularSearch = true;
+		}
 
 		//if we are NOT performing a "regular" search (e.g. user clicked "followers" button")
 		//then show the list which was attached to the intent which started this activity.
